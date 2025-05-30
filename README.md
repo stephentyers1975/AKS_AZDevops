@@ -1,3 +1,3 @@
-# Architecture diagram used in the video
+# Architecture diagram
 
 ![architecture_diagram](architecture.png)
