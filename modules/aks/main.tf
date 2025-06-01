@@ -40,7 +40,7 @@ resource "azurerm_kubernetes_cluster" "aks-cluster" {
   linux_profile {
     admin_username = "ubuntu"
     ssh_key {
-        key_data = trimspace(file(var.ssh_public_key))
+        key_data = tls_private_key.ssh_key.public_key_openssh
     }
   }
 

@@ -9,6 +9,10 @@ terraform {
       source = "hashicorp/azuread"
       version = "~> 3.0.2"
     }
+     tls = {
+      source = "hashicorp/tls"
+      version = "~> 4.0" # Use a compatible version
+    }
   }
 
   required_version = ">= 1.9.0"
