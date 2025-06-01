@@ -14,7 +14,7 @@ module "ServicePrincipal" {
 
 resource "azurerm_role_assignment" "rolespn" {
 
-  scope                = "/subscriptions/${var.SUB_ID}"
+  scope                = azurerm_resource_group.rg1.id
   role_definition_name = "Contributor"
   principal_id         = module.ServicePrincipal.service_principal_object_id
 
@@ -25,8 +25,8 @@ resource "azurerm_role_assignment" "rolespn" {
 
 resource "azurerm_role_assignment" "kv_admin" {
 
-  scope                = "/subscriptions/${var.SUB_ID}"
-  role_definition_name = "Key Vault Contributor"
+  scope                = azurerm_resource_group.rg1.id
+  role_definition_name = "Key Vault Administrator"
   principal_id         = module.ServicePrincipal.service_principal_object_id
 
   depends_on = [
