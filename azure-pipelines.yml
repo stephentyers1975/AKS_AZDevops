@@ -84,6 +84,7 @@ stages:
             provider: 'azurerm'
             command: 'init'
             workingDirectory: '$(System.DefaultWorkingDirectory)/staging'
+            commandOptions: '-upgrade'
             backendAzureRmUseEntraIdForAuthentication: false
             backendServiceArm: 'Azure subscription 1(cd85b600-68f6-46a1-bca4-68945440d2ee)'
             backendAzureRmResourceGroupName: 'terraform-state-rg'
