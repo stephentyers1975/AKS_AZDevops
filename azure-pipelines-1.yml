@@ -37,7 +37,7 @@ stages:
               backendAzureRmResourceGroupName: 'terraform-state-rg'
               backendAzureRmStorageAccountName: 'tf${{ parameters.environment }}2025styers'
               backendAzureRmContainerName: 'tfstate'
-              backendAzureRmKey: '{{ parameters.environment }}-terraform.tfstate'
+              backendAzureRmKey: '${{ parameters.environment }}-terraform.tfstate'
 
           - task: TerraformTaskV4@4
             displayName: destroy
