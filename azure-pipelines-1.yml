@@ -32,6 +32,7 @@ stages:
               provider: 'azurerm'
               command: 'init'
               workingDirectory: '$(System.DefaultWorkingDirectory)/${{ parameters.environment }}'
+              commandOptions: '-upgrade'
               backendServiceArm: 'Azure subscription 1(cd85b600-68f6-46a1-bca4-68945440d2ee)'
               backendAzureRmResourceGroupName: 'terraform-state-rg'
               backendAzureRmStorageAccountName: 'tf${{ parameters.environment }}2025styers'
