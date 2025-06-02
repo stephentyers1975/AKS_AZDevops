@@ -27,7 +27,7 @@ stages:
             backendAzureRmUseEntraIdForAuthentication: false
             backendServiceArm: 'Azure subscription 1(cd85b600-68f6-46a1-bca4-68945440d2ee)'
             backendAzureRmResourceGroupName: 'terraform-state-rg'
-            backendAzureRmStorageAccountName: 'tfdevbackend2024styers'
+            backendAzureRmStorageAccountName: 'tfdev2025styers'
             backendAzureRmContainerName: 'tfstate'
             backendAzureRmKey: 'dev-terraform.tfstate'
         - task: TerraformTask@5
@@ -55,7 +55,7 @@ stages:
             backendAzureRmUseEntraIdForAuthentication: false
             backendServiceArm: 'Azure subscription 1(cd85b600-68f6-46a1-bca4-68945440d2ee)'
             backendAzureRmResourceGroupName: 'terraform-state-rg'
-            backendAzureRmStorageAccountName: 'tfdevbackend2024styers'
+            backendAzureRmStorageAccountName: 'tfdev2025styers'
             backendAzureRmContainerName: 'tfstate'
             backendAzureRmKey: 'dev-terraform.tfstate'
       
@@ -86,7 +86,7 @@ stages:
             backendAzureRmUseEntraIdForAuthentication: false
             backendServiceArm: 'Azure subscription 1(cd85b600-68f6-46a1-bca4-68945440d2ee)'
             backendAzureRmResourceGroupName: 'terraform-state-rg'
-            backendAzureRmStorageAccountName: 'tfstagebackend2024styers'
+            backendAzureRmStorageAccountName: 'tfstaging2025styers'
             backendAzureRmContainerName: 'tfstate'
             backendAzureRmKey: 'staging-terraform.tfstate'
       
