@@ -34,7 +34,7 @@ stages:
               workingDirectory: '$(System.DefaultWorkingDirectory)/${{ parameters.environment }}'
               backendServiceArm: 'Azure subscription 1(cd85b600-68f6-46a1-bca4-68945440d2ee)'
               backendAzureRmResourceGroupName: 'terraform-state-rg'
-              backendAzureRmStorageAccountName: 'tf${{ parameters.environment }}backend2024styers'
+              backendAzureRmStorageAccountName: 'tf${{ parameters.environment }}backend2025styers'
               backendAzureRmContainerName: 'tfstate'
               backendAzureRmKey: 'dev-terraform.tfstate'
 
